@@ -1,10 +1,10 @@
 [![Build Status](https://travis-ci.org/humhub/humhub-modules-tasks.svg?branch=master)](https://travis-ci.org/humhub/humhub-modules-tasks)
 
-Tasks Module
+Subscriptions Module
 ==============
 
-Simple task manager for spaces.
+Adds simple subsciptions widget for spaces.
 
 
 For more  informations visit:
-<https://github.com/humhub/humhub-modules-tasks>
+<https://github.com/staxDB/humhub-modules-subscriptions>
