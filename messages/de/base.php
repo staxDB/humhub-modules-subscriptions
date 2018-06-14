@@ -17,6 +17,8 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
+    'Allows users to view the sidebar widget.' => 'Erlaubt Benutzern, das Sidebar-Widget anzuzeigen.',
+    'Show the sidebar widget' => 'Anzeige des Sidebar Widgets',
     '<strong>Space</strong> subscribers' => '<strong>Space</strong>-Abonnenten',
     '<strong>Subscribers</strong>' => 'Abonnenten',
     '<strong>Subscriptions</strong> module configuration' => '<strong>Abonnements</strong> Modul Konfiguration',

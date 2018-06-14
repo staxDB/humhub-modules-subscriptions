@@ -78,4 +78,19 @@ class Module extends ContentContainerModule
 //    {
 //        return $container->createUrl('/subscriptions/container-config');
 //    }
+
+
+    /**
+     * @inheritdoc
+     */
+    public function getPermissions($contentContainer = null)
+    {
+        if ($contentContainer instanceof Space) {
+            return [
+                new permissions\ViewWidget()
+            ];
+        }
+
+        return [];
+    }
 }

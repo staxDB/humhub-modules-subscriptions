@@ -12,6 +12,7 @@ use Yii;
 use yii\base\Object;
 use humhub\modules\subscriptions\models\SnippetModuleSettings;
 use humhub\modules\subscriptions\widgets\Subscribers;
+use humhub\modules\subscriptions\permissions\ViewWidget;
 
 
 /* @var $user \humhub\modules\user\models\User */
@@ -34,7 +35,9 @@ class Events extends Object
         $settings = SnippetModuleSettings::instantiate();
 
         if ($space->isModuleEnabled('subscriptions')) {
-            $event->sender->addWidget(Subscribers::className(), ['maxSubscribers' => $settings->mySubscribersSnippetMaxItems, 'space' => $space], ['sortOrder' => $settings->mySubscribersSnippetSortOrder]);
+            if ($space->permissionManager->can(ViewWidget::class)) {
+                $event->sender->addWidget(Subscribers::className(), ['maxSubscribers' => $settings->mySubscribersSnippetMaxItems, 'space' => $space], ['sortOrder' => $settings->mySubscribersSnippetSortOrder]);
+            }
         }
     }
 }
