@@ -13,12 +13,12 @@ use yii\web\AssetBundle;
 
 class Assets extends AssetBundle
 {
-    public $css = [
-        'subscriptions.css',
-    ];
-    public $js = [
-        'subscriptions.js'
-    ];
+//    public $css = [
+//        'subscriptions.css',
+//    ];
+//    public $js = [
+//        'subscriptions.js'
+//    ];
 
     public function init()
     {

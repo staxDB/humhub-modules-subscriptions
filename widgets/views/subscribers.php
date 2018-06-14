@@ -6,7 +6,7 @@ use humhub\modules\user\widgets\Image;
 
 <div class="panel panel-default subscribers" id="space-subscribers-panel">
     <?= PanelMenu::widget(['id' => 'space-subscribers-panel']); ?>
-    <div class="panel-heading"><?= Yii::t('SubscriptionsModule.base', '<strong>Space</strong> follower'); ?> (<?= $totalMemberCount ?>)</div>
+    <div class="panel-heading"><?= Yii::t('SubscriptionsModule.base', '<strong>Space</strong> subscribers'); ?> (<?= $totalMemberCount ?>)</div>
     <div class="panel-body">
         <?php foreach ($users as $user) : ?>
             <?php

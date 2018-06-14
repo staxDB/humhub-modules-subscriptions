@@ -2,7 +2,7 @@
     "id": "subscriptions",
     "name": "Subscriptions",
     "description": "Shows up an snippet on spaces for subscribers.",
-    "keywords": ["subscription", "subscriber"],
+    "keywords": ["subscription", "subscriber", "follower"],
     "version": "0.1",
     "humhub": {
         "minVersion": "1.2.4"
