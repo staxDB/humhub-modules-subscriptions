@@ -8,17 +8,14 @@
 
 namespace humhub\modules\subscriptions\widgets;
 
-use humhub\modules\user\models\Follow;
 use \yii\base\Widget;
-use humhub\modules\space\models\Membership;
-use yii\db\Expression;
+use humhub\modules\user\models\Follow;
 use humhub\modules\space\models\Space;
 
 /**
- * Space Members Snippet
+ * Space Subscribers Snippet
  *
- * @author Luke
- * @since 0.5
+ * @author davidborn
  */
 class Subscribers extends Widget
 {
@@ -26,7 +23,7 @@ class Subscribers extends Widget
     /**
      * @var int maximum members to display
      */
-    public $maxSubscribers = 23;
+    public $maxSubscribers;
 
     /**
      * @var Space the space
@@ -43,7 +40,7 @@ class Subscribers extends Widget
         return $this->render('subscribers', [
                     'users' => $users,
                     'showListButton' => (count($users) == $this->maxSubscribers),
-                    'urlMembersList' => $this->space->createUrl('/subscriptions/membership/members-list'),
+                    'urlMembersList' => $this->space->createUrl('/subscriptions/subscriptions/subscribers-list'),
                     'totalMemberCount' => Follow::getFollowersQuery($this->space)->visible()->count()
         ]);
     }

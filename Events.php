@@ -31,13 +31,10 @@ class Events extends Object
         }
 
         $space = $event->sender->space;
-//        $settings = SnippetModuleSettings::instantiate();
+        $settings = SnippetModuleSettings::instantiate();
 
         if ($space->isModuleEnabled('subscriptions')) {
-//            if ($settings->showMyTasksSnippetSpace()) {
-//                $event->sender->addWidget(Subscribers::className(), ['limit' => $settings->myTasksSnippetMaxItems], ['sortOrder' => $settings->myTasksSnippetSortOrder]);
-                $event->sender->addWidget(Subscribers::className(), ['space' => $event->sender->space]);
-//            }
+            $event->sender->addWidget(Subscribers::className(), ['maxSubscribers' => $settings->mySubscribersSnippetMaxItems, 'space' => $space], ['sortOrder' => $settings->mySubscribersSnippetSortOrder]);
         }
     }
 }

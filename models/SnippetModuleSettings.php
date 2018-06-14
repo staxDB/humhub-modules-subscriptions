@@ -14,44 +14,23 @@ use \yii\base\Model;
 
 class SnippetModuleSettings extends Model
 {
-    /**
-     * @var boolean determines if the dashboard widget should be shown or not (default true)
-     */
-    public $myTasksSnippetShow = true;
 
     /**
-     * @var boolean determines if the space sidebar widget should be shown or not (default true)
+     * @var int maximum amount of shown users
      */
-    public $myTasksSnippetShowSpace = true;
-
-    /**
-     * @var int maximum amount of dashboard event items
-     */
-    public $myTasksSnippetMaxItems = 5;
+    public $mySubscribersSnippetMaxItems = 23;
 
     /**
      * @var int defines the snippet widgets sort order
      */
-    public $myTasksSnippetSortOrder = 1;
+    public $mySubscribersSnippetSortOrder = 100;
 
 
     public function init()
     {
-        $module = Yii::$app->getModule('tasks');
-        $this->myTasksSnippetShow = $module->settings->get('myTasksSnippetShow', $this->myTasksSnippetShow);
-        $this->myTasksSnippetShowSpace = $module->settings->get('myTasksSnippetShowSpace', $this->myTasksSnippetShowSpace);
-        $this->myTasksSnippetMaxItems = $module->settings->get('myTasksSnippetMaxItems', $this->myTasksSnippetMaxItems);
-        $this->myTasksSnippetSortOrder = $module->settings->get('myTasksSnippetSortOrder', $this->myTasksSnippetSortOrder);
-    }
-
-    public function showMyTasksSnippet()
-    {
-        return $this->myTasksSnippetShow;
-    }
-
-    public function showMyTasksSnippetSpace()
-    {
-        return $this->myTasksSnippetShowSpace;
+        $module = Yii::$app->getModule('subscriptions');
+        $this->mySubscribersSnippetMaxItems = $module->settings->get('mySubscribersSnippetMaxItems', $this->mySubscribersSnippetMaxItems);
+        $this->mySubscribersSnippetSortOrder = $module->settings->get('mySubscribersSnippetSortOrder', $this->mySubscribersSnippetSortOrder);
     }
 
     /**
@@ -69,9 +48,8 @@ class SnippetModuleSettings extends Model
     public function rules()
     {
         return [
-            [['myTasksSnippetShow', 'myTasksSnippetShowSpace'],  'boolean'],
-            ['myTasksSnippetMaxItems',  'number', 'min' => 1, 'max' => 30],
-            ['myTasksSnippetSortOrder',  'number', 'min' => 0],
+            ['mySubscribersSnippetMaxItems',  'number', 'min' => 1, 'max' => 30],
+            ['mySubscribersSnippetSortOrder',  'number', 'min' => 0],
         ];
     }
 
@@ -81,10 +59,8 @@ class SnippetModuleSettings extends Model
     public function attributeLabels()
     {
         return [
-            'myTasksSnippetShow' => Yii::t('TasksModule.config', 'Show snippet'),
-            'myTasksSnippetShowSpace' => Yii::t('TasksModule.config', 'Show snippet in Space'),
-            'myTasksSnippetMaxItems' => Yii::t('TasksModule.config', 'Max tasks items'),
-            'myTasksSnippetSortOrder' => Yii::t('TasksModule.config', 'Sort order'),
+            'mySubscribersSnippetMaxItems' => Yii::t('SubscriptionsModule.base', 'Max user items'),
+            'mySubscribersSnippetSortOrder' => Yii::t('SubscriptionsModule.base', 'Sort order'),
         ];
     }
 
@@ -94,11 +70,9 @@ class SnippetModuleSettings extends Model
             return false;
         }
 
-        $module = Yii::$app->getModule('tasks');
-        $module->settings->set('myTasksSnippetShow', $this->myTasksSnippetShow);
-        $module->settings->set('myTasksSnippetShowSpace', $this->myTasksSnippetShowSpace);
-        $module->settings->set('myTasksSnippetMaxItems', $this->myTasksSnippetMaxItems);
-        $module->settings->set('myTasksSnippetSortOrder', $this->myTasksSnippetSortOrder);
+        $module = Yii::$app->getModule('subscriptions');
+        $module->settings->set('mySubscribersSnippetMaxItems', $this->mySubscribersSnippetMaxItems);
+        $module->settings->set('mySubscribersSnippetSortOrder', $this->mySubscribersSnippetSortOrder);
         return true;
     }
 }
