@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/humhub/humhub-modules-tasks.svg?branch=master)](https://travis-ci.org/humhub/humhub-modules-tasks)
+[![Build Status](https://travis-ci.org/staxDB/humhub-modules-subscriptions.svg?branch=master)](https://travis-ci.org/staxDB/humhub-modules-subscriptions)
 
 Subscriptions Module
 ==============
