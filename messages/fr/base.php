@@ -17,8 +17,8 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
-    '<strong>Space</strong> subscribers' => '<strong>Membres</strong> de cet espace',
-    '<strong>Subscribers</strong>' => 'Membres',
+    '<strong>Space</strong> subscribers' => '<strong>Abonnés</strong> à cet espace',
+    '<strong>Subscribers</strong>' => 'Abonnés',
     '<strong>Subscriptions</strong> module configuration' => '',
     'Adds a snippet for showing up subscribers.' => '',
     'Allows users to view the sidebar widget.' => '',
@@ -27,5 +27,5 @@ return [
     'Show all' => 'Afficher tout',
     'Show the sidebar widget' => '',
     'Sort order' => 'Ordre de tri',
-    'Subscriptions' => '',
+    'Subscriptions' => 'Abonnements',
 ];
