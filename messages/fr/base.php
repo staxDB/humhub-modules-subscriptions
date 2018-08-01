@@ -17,15 +17,15 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
-    '<strong>Space</strong> subscribers' => '',
-    '<strong>Subscribers</strong>' => '',
+    '<strong>Space</strong> subscribers' => '<strong>Abonnés</strong> à cet espace',
+    '<strong>Subscribers</strong>' => 'Abonnés',
     '<strong>Subscriptions</strong> module configuration' => '',
     'Adds a snippet for showing up subscribers.' => '',
     'Allows users to view the sidebar widget.' => '',
     'Edit <strong>max shown users</strong> in subscribers-list and <strong>sort order</strong> of the widget' => '',
     'Max user items' => '',
-    'Show all' => '',
+    'Show all' => 'Afficher tout',
     'Show the sidebar widget' => '',
-    'Sort order' => '',
-    'Subscriptions' => '',
+    'Sort order' => 'Ordre de tri',
+    'Subscriptions' => 'Abonnements',
 ];
