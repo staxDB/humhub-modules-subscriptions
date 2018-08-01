@@ -9,7 +9,6 @@
 namespace humhub\modules\subscriptions;
 
 use Yii;
-use yii\base\Object;
 use humhub\modules\subscriptions\models\SnippetModuleSettings;
 use humhub\modules\subscriptions\widgets\Subscribers;
 use humhub\modules\subscriptions\permissions\ViewWidget;
@@ -23,7 +22,7 @@ use humhub\modules\subscriptions\permissions\ViewWidget;
  * Date: 14.09.2017
  * Time: 12:12
  */
-class Events extends Object
+class Events
 {
     public static function onSpaceSidebarInit($event)
     {
