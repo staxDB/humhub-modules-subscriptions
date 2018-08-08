@@ -7,13 +7,7 @@ then go to `Administration -> Modules` and **Enable** the **Subscriptions** modu
 
 **_Note:_** You should activate the module on each space (settings) on which the sidebar widget should be displayed.
 
-## Changelog
-
-v 0.1:
-<https://github.com/staxDB/humhub-modules-subscriptions/commits/master>
-
-## Bugtracker
-
-<https://github.com/staxDB/humhub-modules-subscriptions/issues>
-
-## ToDo
+## Links
+- [Changelog](https://github.com/staxDB/humhub-modules-subscriptions/blob/master/docs/CHANGELOG.md)
+- [Github Changelog](https://github.com/staxDB/humhub-modules-subscriptions/commits/master)
+- [Bugtracker](https://github.com/staxDB/humhub-modules-subscriptions/issues)

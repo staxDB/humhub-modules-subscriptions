@@ -9,8 +9,9 @@
 /* @var $this yii\web\View */
 /* @var $model \humhub\modules\subscriptions\models\SnippetModuleSettings */
 
-use yii\widgets\ActiveForm;
+use humhub\modules\ui\form\widgets\ActiveForm;
 use \yii\helpers\Html;
+
 ?>
 
 <div class="panel panel-default">

@@ -8,7 +8,7 @@
 
 namespace humhub\modules\subscriptions\widgets;
 
-use \yii\base\Widget;
+use humhub\components\Widget;
 use humhub\modules\user\models\Follow;
 use humhub\modules\space\models\Space;
 

@@ -9,13 +9,13 @@
 namespace humhub\modules\subscriptions\permissions;
 
 use Yii;
-use humhub\modules\user\models\User;
+use humhub\libs\BasePermission;
 use humhub\modules\space\models\Space;
 
 /**
  * ViewBookmarkStream Permission
  */
-class ViewWidget extends \humhub\libs\BasePermission
+class ViewWidget extends BasePermission
 {
 
     /**
