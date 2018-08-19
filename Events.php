@@ -9,6 +9,7 @@
 namespace humhub\modules\subscriptions;
 
 use Yii;
+use yii\base\BaseObject;
 use humhub\modules\subscriptions\models\SnippetModuleSettings;
 use humhub\modules\subscriptions\widgets\Subscribers;
 use humhub\modules\subscriptions\permissions\ViewWidget;
@@ -19,7 +20,7 @@ use humhub\modules\subscriptions\permissions\ViewWidget;
  * @author David Born ([staxDB](https://github.com/staxDB))
  */
 
-class Events
+class Events extends BaseObject
 {
     public static function onSpaceSidebarInit($event)
     {
