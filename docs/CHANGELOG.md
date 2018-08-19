@@ -1,5 +1,9 @@
 Changelog
 =========
+v.0.3.1
+----------------------
+- Updated to yii/base/BaseObject
+
 v.0.3
 ----------------------
 - Ready for Humhub v.1.3
