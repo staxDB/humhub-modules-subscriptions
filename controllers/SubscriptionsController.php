@@ -29,7 +29,7 @@ class SubscriptionsController extends ContentContainerController
     {
         return [
             'acl' => [
-                'class' => AccessControl::className(),
+                'class' => AccessControl::class,
             ]
         ];
     }

@@ -33,7 +33,7 @@ class Events extends BaseObject
 
         if ($space->isModuleEnabled('subscriptions')) {
             if ($space->permissionManager->can(ViewWidget::class)) {
-                $event->sender->addWidget(Subscribers::className(), ['maxSubscribers' => $settings->mySubscribersSnippetMaxItems, 'space' => $space], ['sortOrder' => $settings->mySubscribersSnippetSortOrder]);
+                $event->sender->addWidget(Subscribers::class, ['maxSubscribers' => $settings->mySubscribersSnippetMaxItems, 'space' => $space], ['sortOrder' => $settings->mySubscribersSnippetSortOrder]);
             }
         }
     }
