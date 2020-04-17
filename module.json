@@ -3,7 +3,7 @@
     "name": "Subscriptions",
     "description": "Shows up an snippet on spaces for subscribers.",
     "keywords": ["subscription", "subscriber", "follower"],
-    "version": "0.3.2",
+    "version": "0.4",
     "humhub": {
         "minVersion": "1.3"
     },

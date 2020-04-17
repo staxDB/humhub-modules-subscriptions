@@ -1,5 +1,9 @@
 Changelog
 =========
+v0.4
+----------------------
+- Ready for Humhub v.1.4
+    
 v0.3.2
 ----------------------
 - Removed Deprecations:
